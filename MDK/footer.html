@@ -1,0 +1,69 @@
+<div class="communicate">
+
+</div>
+
+<div class="claim destroy" id="claim">
+    <button id="claim_back" onclick="menuClaimClose()">Назад</button>   
+    <form action="#">
+        <label for="uname">
+            <i class="fa fa-solid fa-user"></i>
+            Ваше имя
+        </label>
+        <input type="text" id="uname"
+               name="uname" required>
+
+        <label for="email">
+            <i class="fa fa-solid fa-envelope"></i>
+            Ваш E-mail
+        </label>
+        <input type="email" id="email"
+               name="email" required>
+
+        <label for="phone">
+            <i class="fa-solid fa-phone"></i>
+            Ваш номер телефона
+        </label>
+        <input type="tel" id="phone"
+               name="phone" required>
+        <label for="msg">
+            <i class="fa-solid fa-comments"
+               style="margin-right: 3px;"></i>
+            Ваши пожелания:
+        </label>
+        <textarea id="msg" name="msg" required> 
+            </textarea>
+        <button type="submit">
+            Отправить
+        </button>
+    </form>
+</div>
+
+<footer>
+    <content>
+        <div class="line"></div>
+        <div class="block_1">
+            <div class="block_2">
+                <p class="nice_text">Спасибо, что остаётесь с нами!<br>Делитесь с друзьями<br>и заходите ещё :)</p>
+            </div>
+            <div class="block_2">
+                <div class="block_3">
+                    <p>Наше комьюнити</p>
+                    <a href="#">MDK community</a>
+                    <a href="#">MDK forum</a>
+                    <a href="#">MDK chat</a>
+                </div>
+                <div class="block_3">
+                    <p>Поддержка</p>
+                    <a href="#" onclick="menuClaimOpen()">Свяжитесь с нами</a>
+                    <a href="#" onclick="menuClaimOpen()">Отправить жалобу</a>
+                </div>
+            </div>
+        </div>
+    </content>
+
+    <div class="copyright">
+        © Copyright 2024 MurderDronesKnow
+    </div>
+</footer>
+
+<script src="js/footer.js"></script>

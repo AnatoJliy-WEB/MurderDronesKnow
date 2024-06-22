@@ -1,0 +1,56 @@
+<?php require('noerrors.php');?>
+<body>
+    <header>
+        <content>
+            <a href="/" class="logo">MurderDronesKnow</a>
+            <button id="menu_icon" onclick="menuOpen();">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </content>
+    </header>
+    <div id="blind_menu" class="blind_menu_close" onclick="menuClose();"></div>
+    <div id="menu" class="menu_close">
+        <content>
+            <button id="back" onclick="menuClose();">Назад</button>
+            <a href="/">ГЛАВНАЯ</a>
+            <?php echo $menu_info; ?>
+            <details>
+                <summary>ПЕРСОНАЖИ</summary>
+                <a onclick="location.href='j.php'">Серийный номер J</a>
+                <a onclick="location.href='v.php'">Серийный номер V</a>
+                <a onclick="location.href='n.php'">Серийный номер N</a>
+                <a onclick="location.href='khandoorman.php'">Khan Doorman</a>
+                <a onclick="location.href='uzidoorman.php'">Uzi Doorman</a>
+            </details>
+            <details>
+                <summary>СОЗДАТЕЛИ</summary>
+                <a onclick="window.open('https://murder-drones.fandom.com/wiki/Luke_Lerdwichagul', '_blank')">Luke Lerdwichagul</a>
+                <a onclick="window.open('https://murder-drones.fandom.com/wiki/Kevin_Lerdwichagul', '_blank')">Kevin Lerdwichagul</a>
+                <a onclick="window.open('https://www.liamvickers.com/', '_blank')">Liam Vickers</a>
+            </details>
+            <div class="for_links">
+                <a onclick="window.open('https://www.glitchprod.com/', '_blank')">
+                    <img src="img/glitchprod.webp" style="background-color: #dfdfe7; border-radius: 10px;">
+                    <p>glitchprod.com</p>
+                </a>
+                <div class="line"></div>
+                <a onclick="window.open('https://www.youtube.com/c/glitchprod', '_blank')">
+                    <img src="vector/icons/yt.svg">
+                    <p>youtube.com/c/glitchprod</p>
+                </a>
+                <div class="line"></div>
+                <a onclick="window.open('https://www.twitch.tv/glitch_prod', '_blank')">
+                    <img src="vector/icons/tw.svg">
+                    <p>twitch.tv/glitch_prod</p>
+                </a>
+            </div>
+            <img class="img_cordie" src="img/uzi_active_menu.png">
+        </content>
+    </div>
+    <div id="blind">
+        <p>Ваше устройство не поддерживается</p>
+    </div>
+    <script src="js/header.js"></script>
+</body>

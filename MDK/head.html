@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!--Документ первоначальной настройки для каждой страницы сайта-->
+<head>
+    <!--установка кодировки-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--запрет изменения размеров пользователю + унификация под экраны-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--установка иконки через переменную (задаётся в файле, подгружающий этот)-->
+    <link rel="icon" type="image/x-icon" href="<?php echo " /favicons/". $favicon; ?>">
+    <!--установка TITLE через переменную (задаётся в файле, подгружающий этот)-->
+    <title><?echo $title?></title>
+    <!--подгрузка файлов стилей-->
+    <link href="/css/normalize-v-8.0.1.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
